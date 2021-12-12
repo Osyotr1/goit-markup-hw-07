@@ -21,6 +21,15 @@
     color: #FFFFFF;
 }
 
+.join__item {
+    width: 44px;
+    height: 44px;
+
+    & + & {
+        margin-left: 10px;
+    }
+}
+
 .join__social-link {
     margin-top: 20px;
     display: flex;
@@ -32,6 +41,7 @@
     color: #FFFFFF;
     background-color:rgba(255, 255, 255, 0.1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
     &:hover,
     &:focus,

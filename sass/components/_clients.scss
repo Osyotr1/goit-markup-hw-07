@@ -18,10 +18,10 @@
     display: flex;
     width: 170px;
     height: 94px;
-}
 
-.clients__item + .clients__item {
+    & + & {
     margin-left: 30px;
+    }
 }
 
 

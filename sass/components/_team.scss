@@ -59,11 +59,13 @@
 .team__item-icons {
     width: 44px;
     height: 44px;
-}
 
-.team__item-icons + .team__item-icons {
+    & + & {
     margin-left: 10px;
 }
+}
+
+
 
 .team__social-link {
     display: flex;

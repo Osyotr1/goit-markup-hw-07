@@ -45,14 +45,13 @@
 
 .address__item {
     display: block;
+
+    &:not(:last-child) {
+    margin-bottom: 9px;
+    }
 }
 
-.address__item:not(:last-child) {
-    margin-bottom: 9px;
-} 
-
-
-
+ 
 .address__contact {
     font-family: inherit;
     color: $footer-contacts-color;

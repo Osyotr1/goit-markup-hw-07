@@ -19,18 +19,16 @@
 }
 
 .filter__button {
+    @extend %filters-button;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    color: $filter-btn-color;
-    background-color: $filter-btn-bg;
     border-radius: 4px;
     border: transparent;
     padding: 6px 22px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    
     &:hover,
     &:focus,
     &:active {

@@ -18,11 +18,13 @@
     position: relative;
     width: 370px;
     height: 294px;
+
+    &:not(:last-child) {
+    margin-right: 30px;
+    }
 }
 
-.work__item:not(:last-child) {
-    margin-right: 30px;
-}
+
 
 .work__text {
     display: flex;

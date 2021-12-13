@@ -50,9 +50,8 @@
 
 .current {
     color: $pseudo-class-color;
-}
 
-.current::after {
+    &::after {
     position: absolute;
     display:block;
     content: "";
@@ -61,7 +60,10 @@
     bottom: -1px;
     background-color: #2196F3;
     border-radius: 2px;
+    }
 }
+
+
 
 .contacts {
     display: flex;

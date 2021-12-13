@@ -7,10 +7,7 @@
     transition: opacity 500ms, visibility 500ms;
 }
 
-.backdrop.is-hidden .modal {
-    transform: scale(0.3) translate(-3000px);
-    transition: transform 500ms;
-}
+
 
 .modal {
     width: 528px;
@@ -25,6 +22,11 @@
     transform: scale(1);
     transform: translate(-50%, -50%);
     transition: transform 500ms;
+
+    .backdrop.is-hidden & {
+    transform: scale(0.3) translate(-3000px);
+    transition: transform 500ms;
+}
 }
 
 .modal__close {
@@ -102,12 +104,6 @@
     }
 }
 
-
-
-.modal-form__input:focus + .modal-form__icon {
-    fill: #2196F3;
-}
-
 .modal-form__box {
     position: relative;
 }
@@ -118,6 +114,11 @@
     top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier;
+
+
+    .modal-form__input:focus + & {
+    fill: #2196F3;
+    }
 }
 
 .modal-form__text-area {
@@ -134,9 +135,8 @@
     &:focus {
     border-color: #2196F3;
     }
-}
 
-.modal-form__text-area::placeholder {
+    &::placeholder {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -144,7 +144,10 @@
     line-height: 1.14;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+    }
 }
+
+
 
 
 

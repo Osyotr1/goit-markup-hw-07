@@ -21,6 +21,8 @@ img {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
+    -moz-appearance: none; 
+    -webkit-appearance: none;
 }
 
 .visually-hidden {
